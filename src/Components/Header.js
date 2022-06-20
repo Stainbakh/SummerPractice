@@ -1,20 +1,41 @@
-import { Image, Container, Flex, Box, useColorMode } from '@chakra-ui/react';
-import { ColorModeSwitcher} from '../ColorModeSwitcher';
-import Logo from '../logo.svg'
+import {
+  Container,
+  Flex,
+  Box,
+  useColorMode,
+  Heading,
+  Breadcrumb,
+  BreadcrumbItem,
+  BreadcrumbLink,
+} from '@chakra-ui/react';
+import { ColorModeSwitcher } from '../ColorModeSwitcher';
+import { SmallCloseIcon } from '@chakra-ui/icons'
 
 const Header = () => {
   const {colorMode} = useColorMode();
   return(
 
-    <Box as = "header" py = {4} bg = {colorMode === 'dark' ? 'gray.600' : 'green.200'}>
+    <Box as = "header" py = {1.5} bg = {colorMode === 'dark' ? 'gray.600' : 'green.200'}>
       <Container maxW = "container.lg">
         <Flex justifyContent="space-between" alignItems="center">
-          <Image
-            src={Logo}
-            alt ="logo"
-            boxSize = "100px"
-            objectFit="cover"
-          />
+
+          <Heading size = '2xl'>
+            Steinbach.
+          </Heading>
+          <Breadcrumb fontWeight='900' fontSize='3xl' spacing='12px' separator={<SmallCloseIcon color='gray.500' />}>
+            <BreadcrumbItem>
+              <BreadcrumbLink href='#'>About</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem>
+              <BreadcrumbLink href='#'>Contact</BreadcrumbLink>
+            </BreadcrumbItem>
+
+            <BreadcrumbItem isCurrentPage>
+              <BreadcrumbLink href='#'>Projects</BreadcrumbLink>
+            </BreadcrumbItem>
+          </Breadcrumb>
+
           <ColorModeSwitcher />
         </Flex>
       </Container>

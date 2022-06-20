@@ -4,9 +4,9 @@ import {
   Box,
   Heading,
   Text,
-  theme,
+  palette,
   Container,
-  Divider,
+  Divider, extendTheme,
 } from '@chakra-ui/react';
 
 import { Header } from './Components/Header'
@@ -49,18 +49,24 @@ const  posts = [
       "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
     },
 ]
+const theme = extendTheme({
+  colors: {
+    brand: {
+      100: '#ab47bc',
+      200: '#ab47bc',
+      300: '#ab47bc',
+      400: '#ce93d8',
+      500: '#ce93d8',
+      600: '#ce93d8',
+    }
+  }
+
+});
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Header />
       <Container maxW="container.lg">
-        <Box py="2">
-          <Heading size = '3xl'>
-            Chakra Demo Page
-          </Heading>
-          <Text fontSize="2xl">3rd try</Text>
-        </Box>
-        <Divider />
         <CardList cards={posts} />
       </Container>
     </ChakraProvider>
