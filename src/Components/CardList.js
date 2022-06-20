@@ -13,7 +13,7 @@ export const CardList = props =>{
               {card.body}
             </Text>
             <Button as = "a" colorScheme="brand">
-              Read more
+              To project
             </Button>
           </Stack>
           )
