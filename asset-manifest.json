@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.js": "/SummerPractice/static/js/main.05806832.js",
+    "main.js": "/SummerPractice/static/js/main.2866e5dd.js",
     "static/js/377.c1855308.chunk.js": "/SummerPractice/static/js/377.c1855308.chunk.js",
+    "static/media/MyPhoto.jpg": "/SummerPractice/static/media/MyPhoto.2d60799e1c685207f206.jpg",
     "index.html": "/SummerPractice/index.html",
-    "main.05806832.js.map": "/SummerPractice/static/js/main.05806832.js.map",
+    "main.2866e5dd.js.map": "/SummerPractice/static/js/main.2866e5dd.js.map",
     "377.c1855308.chunk.js.map": "/SummerPractice/static/js/377.c1855308.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.05806832.js"
+    "static/js/main.2866e5dd.js"
   ]
 }
