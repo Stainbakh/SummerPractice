@@ -15,7 +15,7 @@ const Header = () => {
   const {colorMode} = useColorMode();
   return(
 
-    <Box as = "header" py = {1.5} bg = {colorMode === 'dark' ? 'gray.600' : 'green.200'}>
+    <Box as = "header" py = {1.5} bg = {colorMode === 'dark' ? 'gray.600' : 'green.300'}>
       <Container maxW = "container.lg">
         <Flex justifyContent="space-between" alignItems="center">
 
@@ -24,15 +24,15 @@ const Header = () => {
           </Heading>
           <Breadcrumb fontWeight='900' fontSize='3xl' spacing='12px' separator={<SmallCloseIcon color='gray.500' />}>
             <BreadcrumbItem>
-              <BreadcrumbLink href='#'>About</BreadcrumbLink>
+              <BreadcrumbLink href='#About'>About</BreadcrumbLink>
             </BreadcrumbItem>
 
             <BreadcrumbItem>
-              <BreadcrumbLink href='#'>Contact</BreadcrumbLink>
+              <BreadcrumbLink href='#Contact'>Contact</BreadcrumbLink>
             </BreadcrumbItem>
 
-            <BreadcrumbItem isCurrentPage>
-              <BreadcrumbLink href='#'>Projects</BreadcrumbLink>
+            <BreadcrumbItem>
+              <BreadcrumbLink href='#Projects'>Projects</BreadcrumbLink>
             </BreadcrumbItem>
           </Breadcrumb>
 
