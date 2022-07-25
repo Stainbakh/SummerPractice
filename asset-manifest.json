@@ -1,13 +1,14 @@
 {
-  "files": {
-    "main.js": "/SummerPractice/static/js/main.2866e5dd.js",
-    "static/js/377.c1855308.chunk.js": "/SummerPractice/static/js/377.c1855308.chunk.js",
-    "static/media/MyPhoto.jpg": "/SummerPractice/static/media/MyPhoto.2d60799e1c685207f206.jpg",
-    "index.html": "/SummerPractice/index.html",
-    "main.2866e5dd.js.map": "/SummerPractice/static/js/main.2866e5dd.js.map",
-    "377.c1855308.chunk.js.map": "/SummerPractice/static/js/377.c1855308.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/js/main.2866e5dd.js"
-  ]
+  "main.js": "/SummerPractice/static/js/main.462f7b92.chunk.js",
+  "main.js.map": "/SummerPractice/static/js/main.462f7b92.chunk.js.map",
+  "static/js/1.9d7a6bb4.chunk.js": "/SummerPractice/static/js/1.9d7a6bb4.chunk.js",
+  "static/js/1.9d7a6bb4.chunk.js.map": "/SummerPractice/static/js/1.9d7a6bb4.chunk.js.map",
+  "static/js/2.17303b84.chunk.js": "/SummerPractice/static/js/2.17303b84.chunk.js",
+  "static/js/2.17303b84.chunk.js.map": "/SummerPractice/static/js/2.17303b84.chunk.js.map",
+  "runtime~main.js": "/SummerPractice/static/js/runtime~main.9e84e404.js",
+  "runtime~main.js.map": "/SummerPractice/static/js/runtime~main.9e84e404.js.map",
+  "static/media/MyPhoto.jpg": "/SummerPractice/static/media/MyPhoto.51861288.jpg",
+  "index.html": "/SummerPractice/index.html",
+  "precache-manifest.d26178fea09ef0e771b826e774f51592.js": "/SummerPractice/precache-manifest.d26178fea09ef0e771b826e774f51592.js",
+  "service-worker.js": "/SummerPractice/service-worker.js"
 }
