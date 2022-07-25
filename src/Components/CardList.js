@@ -1,8 +1,9 @@
 import { SimpleGrid, Box, Button, Heading, Text, Stack } from '@chakra-ui/react';
+import React from 'react'
 export const CardList = props =>{
   const {cards = []} = props;
   return(
-    <Box>
+    <Box minW = '560'>
       <Heading id = "Projects" fontSize = "6xl" py = "10">
         My projects
       </Heading>
@@ -10,10 +11,10 @@ export const CardList = props =>{
       {
         cards.map(card=>(
           <Stack key = {card.title} spacing = {3} _hover={{shadow:'md'}} p={2}>
-            <Heading fontSize = "3xl" fontWeight="bold">
+            <Heading fontSize = "3xl" fontWeight="bold" >
               {card.title}
             </Heading>
-            <Text>
+            <Text fontSize = "xl" noOfLines={4}>
               {card.body}
             </Text>
             <Button as = "a" href = {card.project_ref} colorScheme="brand">

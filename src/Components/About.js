@@ -1,14 +1,20 @@
-import { Container, Flex, Heading, Image, Text } from '@chakra-ui/react';
+import { Container, Flex, Heading, Hide, Image, Spacer, Text } from '@chakra-ui/react';
 import logo from "./MyPhoto.jpg";
+import React from 'react'
 export const About = () =>{
+
   return(
-    <Container maxW="container.lg">
+    <Container minW = '560' maxW="container.lg">
       <Heading id = "About" fontSize= "6xl" py = "10">
         About me
       </Heading>
       <Flex justifyContent="space-between"  py="0.5" >
         <Text  fontSize = "2xl" fontWeight = "semibold">
-          Hello, I'm Ivan, a second year student of MTUCI and a beginner front-end developer. <br/> My favourite joke: <br/>
+          Hello, I'm Ivan, a second year student of MTUCI and a beginner front-end developer.
+        </Text>
+        <Spacer />
+        <Text fontSize= '2xl' fontWeight = "semibold">
+          My favourite joke: <br/>
           Three Tomatoes A family of three tomatoes were walking downtown one day when the little baby tomato started lagging behind.
           The big father tomato walks back to the baby tomato, stomps on her, squashing her into a red paste, and says, "Ketchup!"
         </Text>
@@ -22,6 +28,7 @@ export const About = () =>{
         />
 
       </Flex>
+      <Hide below = "767px">
       <Flex justifyContent="space-between" alignItems="baseline">
       <Text fontSize = "lg" as = "cite" p="1">
         Eyes of gray—the sodden quay,
@@ -113,6 +120,7 @@ export const About = () =>{
         <br/>
       </Text>
       </Flex>
+      </Hide>
     </Container>
   )
 }

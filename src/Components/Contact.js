@@ -1,9 +1,11 @@
 import { Button, Container, Heading, HStack } from '@chakra-ui/react';
 import {FaGithub, FaTelegramPlane } from 'react-icons/all';
+import React from 'react'
+import { EmailIcon } from '@chakra-ui/icons';
 
 export const Contact = () => {
   return(
-    <Container maxW="container.lg">
+    <Container minW = '560' maxW="container.lg">
       <Heading id = "Contact" fontSize = "6xl" py = "10">
         Contact me
       </Heading>
@@ -13,6 +15,9 @@ export const Contact = () => {
         </Button>
         <Button as = "a" href = "https://t.me/shtaivs" colorScheme='brand' leftIcon={<FaTelegramPlane />} size = "lg">
           Telegram
+        </Button>
+        <Button as = "a" href = "https://vk.com/shtis" colorScheme='brand' leftIcon={<EmailIcon />} size = "lg">
+          Vk
         </Button>
       </HStack>
     </Container>
