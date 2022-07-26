@@ -1,14 +1,13 @@
 {
-  "main.js": "/SummerPractice/static/js/main.462f7b92.chunk.js",
-  "main.js.map": "/SummerPractice/static/js/main.462f7b92.chunk.js.map",
-  "static/js/1.9d7a6bb4.chunk.js": "/SummerPractice/static/js/1.9d7a6bb4.chunk.js",
-  "static/js/1.9d7a6bb4.chunk.js.map": "/SummerPractice/static/js/1.9d7a6bb4.chunk.js.map",
-  "static/js/2.17303b84.chunk.js": "/SummerPractice/static/js/2.17303b84.chunk.js",
-  "static/js/2.17303b84.chunk.js.map": "/SummerPractice/static/js/2.17303b84.chunk.js.map",
-  "runtime~main.js": "/SummerPractice/static/js/runtime~main.9e84e404.js",
-  "runtime~main.js.map": "/SummerPractice/static/js/runtime~main.9e84e404.js.map",
-  "static/media/MyPhoto.jpg": "/SummerPractice/static/media/MyPhoto.51861288.jpg",
+  "main.js": "/SummerPractice/static/js/main.d24557aa.chunk.js",
+  "main.js.map": "/SummerPractice/static/js/main.d24557aa.chunk.js.map",
+  "static/js/1.1d3b6a18.chunk.js": "/SummerPractice/static/js/1.1d3b6a18.chunk.js",
+  "static/js/1.1d3b6a18.chunk.js.map": "/SummerPractice/static/js/1.1d3b6a18.chunk.js.map",
+  "static/js/2.0aa8d1e6.chunk.js": "/SummerPractice/static/js/2.0aa8d1e6.chunk.js",
+  "static/js/2.0aa8d1e6.chunk.js.map": "/SummerPractice/static/js/2.0aa8d1e6.chunk.js.map",
+  "runtime~main.js": "/SummerPractice/static/js/runtime~main.f274b8df.js",
+  "runtime~main.js.map": "/SummerPractice/static/js/runtime~main.f274b8df.js.map",
   "index.html": "/SummerPractice/index.html",
-  "precache-manifest.d26178fea09ef0e771b826e774f51592.js": "/SummerPractice/precache-manifest.d26178fea09ef0e771b826e774f51592.js",
+  "precache-manifest.b63f4ac3a31fe00422bbef9bd4b96021.js": "/SummerPractice/precache-manifest.b63f4ac3a31fe00422bbef9bd4b96021.js",
   "service-worker.js": "/SummerPractice/service-worker.js"
 }
