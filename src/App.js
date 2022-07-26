@@ -2,7 +2,7 @@ import React from 'react';
 import {
   ChakraProvider,
   Container,
-  extendTheme,
+  extendTheme, Spacer,
 } from '@chakra-ui/react';
 
 import { Header } from './Components/Header'
@@ -53,7 +53,10 @@ const  posts = [
       "body": "ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae"
     },
 ]
+
+
 const theme = extendTheme({
+
   colors: {
     brand: {
       100: '#ab47bc',

@@ -1,32 +1,87 @@
-import { Container, Flex, Heading, Hide, Image, Spacer, Text } from '@chakra-ui/react';
-import logo from "./MyPhoto.jpg";
+import {
+  Container,
+  extendTheme,
+  Flex,
+  Heading,
+  Hide,
+  Image,
+  Show,
+  Text,
+  useBreakpointValue,
+} from '@chakra-ui/react';
 import React from 'react'
-export const About = () =>{
 
+export const About = () =>{
+  const breakpoints = {
+    sm: '320px',
+    md: '768px',
+    lg: '960px',
+    xl: '1200px',
+    '2xl': '1536px',
+  }
+ const  fontWeights = {
+   hairline: 100,
+   thin: 200,
+   light: 300,
+   normal: 400,
+   medium: 500,
+   semibold: 600,
+   bold: 700,
+   extrabold: 800,
+   black: 900,
+ }
+ const fontSizes = {
+   xs: "0.75rem",
+   sm: "0.875rem",
+   md: "1rem",
+   lg: "1.125rem",
+   xl: "1.25rem",
+   "2xl": "1.5rem",
+   "3xl": "1.875rem",
+   "4xl": "2.25rem",
+   "5xl": "3rem",
+   "6xl": "3.75rem",
+   "7xl": "4.5rem",
+   "8xl": "6rem",
+   "9xl": "8rem",
+ }
+
+  const align = useBreakpointValue({ base: 'center', sm: 'start' })
+  const weigth = useBreakpointValue({base: 'bold', sm: 'semibold'})
+  const size = useBreakpointValue({base: "1.5rem", sm: "1.875rem"})
+  const theme = extendTheme({ breakpoints, fontSizes, fontWeights })
   return(
-    <Container minW = '560' maxW="container.lg">
+    <Container  centerContent minW = '560' maxW="container.lg">
       <Heading id = "About" fontSize= "6xl" py = "10">
         About me
       </Heading>
-      <Flex justifyContent="space-between"  py="0.5" >
-        <Text  fontSize = "2xl" fontWeight = "semibold">
-          Hello, I'm Ivan, a second year student of MTUCI and a beginner front-end developer.
-        </Text>
-        <Spacer />
-        <Text fontSize= '2xl' fontWeight = "semibold">
-          My favourite joke: <br/>
+      <Show below = '767px'>
+        <Container centerContent>
+        <Image
+          py = '3'
+          align='center'
+          borderRadius='full'
+          boxSize='400px'
+          src='drinking.gif'
+          alt='Logo'
+        />
+        </Container>
+      </Show>
+      <Flex justifyContent="space-between"  py="3" >
+        <Text theme = {theme} align = {align} fontSize = {size} fontWeight = {weigth}>
+          Hello, I'm Ivan, a second year student of MTUCI and a beginner front-end developer. <br/> My favourite joke: <br/>
           Three Tomatoes A family of three tomatoes were walking downtown one day when the little baby tomato started lagging behind.
           The big father tomato walks back to the baby tomato, stomps on her, squashing her into a red paste, and says, "Ketchup!"
         </Text>
-
+        <Show above = '768px'>
         <Image
-          px = "5"
+          px='8'
           borderRadius='full'
-          boxSize='320px'
-          src={logo}
+          boxSize='300px'
+          src='drinking.gif'
           alt='Logo'
         />
-
+        </Show>
       </Flex>
       <Hide below = "767px">
       <Flex justifyContent="space-between" alignItems="baseline">

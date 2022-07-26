@@ -7,7 +7,7 @@ export const CardList = props =>{
       <Heading id = "Projects" fontSize = "6xl" py = "10">
         My projects
       </Heading>
-    <SimpleGrid columns = {[1, null, 2, 3]} spacing = {[4, null, 6,]}>
+    <SimpleGrid columns = {[2, null, 2, 3]} spacing = {[4, null, 6,]}>
       {
         cards.map(card=>(
           <Stack key = {card.title} spacing = {3} _hover={{shadow:'md'}} p={2}>
