@@ -48,18 +48,18 @@ export const About = () =>{
 
   const align = useBreakpointValue({ base: 'center', sm: 'start' })
   const weigth = useBreakpointValue({base: 'bold', sm: 'semibold'})
-  const size = useBreakpointValue({base: "2rem", sm: "1.75rem"})
+  const size = useBreakpointValue({base: "1.9rem", sm: "1.75rem"})
   const centre = useBreakpointValue({base:  1, sm: 0})
   const theme = extendTheme({ breakpoints, fontSizes, fontWeights, centre})
   return(
     <Container  centerContent = {centre} minW = '560' maxW="container.lg">
-      <Heading id = "About" fontSize= "6xl" py = "10">
+      <Heading id = "About" fontSize= "6xl" py = "4">
         About me
       </Heading>
       <Show below = '767px'>
         <Container centerContent>
         <Image
-          py = '3'
+          py = '1.5'
           align='center'
           borderRadius='full'
           boxSize='400px'
@@ -68,19 +68,20 @@ export const About = () =>{
         />
         </Container>
       </Show>
-      <Flex justifyContent="space-between"  py="3" >
-        <Text theme = {theme} align = {align} fontSize = {size} fontWeight = {weigth}>
+      <Flex   py="3" >
+        <Text theme = {theme} align = {align} fontSize = {size} fontWeight = {weigth} zIndex= '-1' >
           Hello, I'm Ivan, a second year student of MTUCI and a beginner front-end developer. <br/> My favourite joke: <br/>
           Three Tomatoes A family of three tomatoes were walking downtown one day when the little baby tomato started lagging behind.
           The big father tomato walks back to the baby tomato, stomps on her, squashing her into a red paste, and says, "Ketchup!"
         </Text>
         <Show above = '768px'>
         <Image
-          px='8'
+          px='7'
           borderRadius='full'
           boxSize='400px'
           src='drinking.gif'
           alt='Logo'
+          zIndex= "0"
         />
         </Show>
       </Flex>
