@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "29ff6d81789a04ab4c6b",
-    "url": "/SummerPractice/static/js/main.29ff6d81.chunk.js"
+    "revision": "6dd9bcf41ac0ffe454f1",
+    "url": "/SummerPractice/static/js/main.6dd9bcf4.chunk.js"
   },
   {
     "revision": "1d3b6a1826a22b268bac",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/SummerPractice/static/js/runtime~main.f274b8df.js"
   },
   {
-    "revision": "65389ed60e3b4f260ff860999ac1b2da",
+    "revision": "1f1410d34caef56b5de7e4092f4fae1d",
     "url": "/SummerPractice/index.html"
   }
 ];
