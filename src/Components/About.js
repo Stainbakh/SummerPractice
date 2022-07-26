@@ -48,10 +48,11 @@ export const About = () =>{
 
   const align = useBreakpointValue({ base: 'center', sm: 'start' })
   const weigth = useBreakpointValue({base: 'bold', sm: 'semibold'})
-  const size = useBreakpointValue({base: "1.5rem", sm: "1.875rem"})
-  const theme = extendTheme({ breakpoints, fontSizes, fontWeights })
+  const size = useBreakpointValue({base: "2rem", sm: "1.75rem"})
+  const centre = useBreakpointValue({base:  1, sm: 0})
+  const theme = extendTheme({ breakpoints, fontSizes, fontWeights, centre})
   return(
-    <Container  centerContent minW = '560' maxW="container.lg">
+    <Container  centerContent = {centre} minW = '560' maxW="container.lg">
       <Heading id = "About" fontSize= "6xl" py = "10">
         About me
       </Heading>
@@ -77,7 +78,7 @@ export const About = () =>{
         <Image
           px='8'
           borderRadius='full'
-          boxSize='300px'
+          boxSize='400px'
           src='drinking.gif'
           alt='Logo'
         />

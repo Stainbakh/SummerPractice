@@ -14,7 +14,7 @@ const Header = () => {
   return(
     <Box minW = '580' as = "header" py = {1.5} bg = {colorMode === 'dark' ? 'gray.600' : 'green.300'}>
       <Container maxW = "container.lg">
-        <Flex Flex minWidth='max-content' alignItems='center' gap='2'>
+        <Flex minWidth='max-content' alignItems='center' gap='2'>
 
           <Heading size = '2xl'>
             Steinbach.
